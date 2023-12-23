@@ -1,0 +1,100 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #ffccff;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ff6699;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 5px solid #ff3366;
+}
+
+main {
+    padding: 20px;
+    color: #333;
+}
+
+#surpriseImage {
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.gallery img {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    border: 2px solid #000000; /* Add a border for a button-like appearance */
+    padding: 5px;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+section {
+    background-color: #ffe6e6;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #ff6699;
+    color: #fff;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #ff3366;
+}
+
+#gameSection {
+    text-align: center;
+}
+
+/* Add these styles to your existing CSS */
+
+#gameArea {
+    position: relative;
+    width: 20%;
+    height: 200px;
+    margin: 20px auto;
+    border: 2px solid #3498db;
+    overflow: hidden;
+}
+
+#gameImage {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: moveAnimation 2s infinite linear;
+}
+
+@keyframes moveAnimation {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(100%, 0px); }
+    50% { transform: translate(100%, 100px); }
+    75% { transform: translate(100%, 150px); }
+    100% { transform: translate(0, 0); }
+}
+
+

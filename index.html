@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My mpompos</title>
+
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Overwhelmingly Huge Surprise! -->
+
+    <header>
+        <h1>Doro gia ton mpompo</h1>
+    </header>
+
+    <main>
+        <p>Me poly poly agaph<br>para poly</p>
+        <p>to ekana epeidh <s>me esteiles posa tiktok gia na to kanw</s> mou leipses</p>
+        <img id="surpriseImage" src="path/to/initial/image.jpg" alt="Pata ta kato koubia gia na deis (epeidh eisai ligo xazh ksekina me thn 3h kaluterh)" onclick="revealSurprise()">
+        <h1 id="text"></h1>
+        
+        <div class="gallery">
+            <img alt="3h kaluterh photo" onclick="showPhoto('mpompos3.jpg', 300, 275)">
+            <img alt="2h kaluterh photo" onclick="showPhoto('mpompos2.jpg', 300, 275)">
+            <img alt="1h kaluterh photo" onclick="showPhotoSpecial('trap.jpg', 'mpompos1.jpg', 300, 275)">
+            <!-- Add more joyous photos as needed -->
+        </div>
+
+        <section>
+            <h2>1o paixnidi</h2>
+            <p>prospathise na pathseis ton mpompo</p>
+
+            <div id="gameArea">
+                <img id="gameImage" src="ego.jpg" alt="mpompos" width="100" height="100">
+            </div>
+            <p id="message"></p>
+        </section>
+
+        <section>
+            <h2>2o paixnidi</h2>
+            <p>pata to gramma poy leipei gia na se kanw hand reveal</p>
+            <h1>mp_mpos</h1>
+            <button onclick="showWrong('middlefinger.png', 200, 200)">e</button>
+            <button onclick="showWrong('middlefinger.png', 200, 200)">a</button>
+            <button onclick="showRight('hand.jpg', 200, 200)">o</button>
+            <h1 id="text2"></h1>
+            <img id="surpriseImage2" alt=" " width="200" height="200">
+        </section>
+
+        <section>
+            <h2>3o paixnidi</h2>
+            <p>pata to doraki me to agaphmeno sou xroma</p>
+
+            <h1 id="text3"></h1>
+            <img id="surpriseImage3" src="giftlogo.png" alt="surprise3" width="200" height="200" onclick="showPhotoSpecial3('please.jpg', 200, 200)">
+        </section>
+    </main>
+
+    <footer>
+        <p>ftiaxthke me agaph ❤️</p>
+    </footer>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
